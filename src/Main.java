@@ -16,6 +16,11 @@ public class Main {
         System.out.println("Итоговая сумма" + balance);
 
         int amountBonus = replenishment / startBalance;
+        if (replenishment < 1000) {
+            amountBonus = 0;
+        }else{
+            bonus = replenishment / startBalance;
+        }
         System.out.println("Полученные бонусы" + amountBonus);
     }
 

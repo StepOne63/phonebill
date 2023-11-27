@@ -3,19 +3,19 @@ public class Main {
     public static void main(String[] args) {
 
         int startBalance = 100;
-        int replenishmentMore1000 = 1100; // Платеж
+        int replenishment = 1100; // Платеж
 
         int bonus;
-        if (replenishmentMore1000 > 1000) {
-            bonus = replenishmentMore1000 / startBalance;
+        if (replenishment > 1000) {
+            bonus = replenishment / startBalance;
         } else {
             bonus = 0;
         }
 
-        int balance = bonus + replenishmentMore1000 + startBalance;
+        int balance = bonus + replenishment + startBalance;
         System.out.println("Итоговая сумма" + balance);
 
-        int amountBonus = replenishmentMore1000 / startBalance;
+        int amountBonus = replenishment / startBalance;
         System.out.println("Полученные бонусы" + amountBonus);
     }
 

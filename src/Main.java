@@ -2,19 +2,19 @@
 public class Main {
     public static void main(String[] args) {
 
-        int startbalance = 100;
-        int payone = 1100;
-        int paytwo = 300;
-        boolean More500 = true;
+        int StartBalance = 100;
+        int PayMore500 = 1100;
+        int PayLess500 = 300;
+        boolean PaymentMore500 = true;
 
         int bonus;
-        if (More500) {
-            bonus = payone / startbalance;
+        if (PaymentMore500) {
+            bonus = PayMore500 / StartBalance;
         } else {
-            bonus = paytwo / startbalance;
+            bonus = PayLess500 / StartBalance;
         }
 
-        int balance = bonus + payone + startbalance;
+        int balance = bonus + PayMore500 + StartBalance;
         System.out.println("Итоговая сумма" + balance);
     }
 

@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         int startBalance = 100;
-        int replenishment = 1100; // Платеж
+        int replenishment = 300; // Платеж
 
         int bonus;
         if (replenishment > 1000) {

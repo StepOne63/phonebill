@@ -1,4 +1,3 @@
-
 public class Main {
     public static void main(String[] args) {
 
@@ -18,10 +17,9 @@ public class Main {
         int amountBonus = replenishment / startBalance;
         if (replenishment < 1000) {
             amountBonus = 0;
-        }else{
-            bonus = replenishment / startBalance;
         }
         System.out.println("Полученные бонусы" + amountBonus);
     }
-
 }
+
+
